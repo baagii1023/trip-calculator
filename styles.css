@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(201, 202, 203);
+  }
+  
+  .container {
+    position: relative; /* Ensure the container is positioned */
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #ccc; /* Add border style */
+    padding: 30px; /* Add padding for spacing */
+    background-color: #e1dfdf;
+    border-radius: 5px;
+    position: absolute; /* Position the form absolutely within the container */
+    left: 50%; /* Center the form horizontally */
+    top: 50%; /* Center the form vertically */
+    transform: translate(-50%, -50%); /* Center the form perfectly */
+    z-index: 1; /* Ensure the form is above the image */
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    font-size: medium;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  #result {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header h2 {
+    color: black;
+    display: flex;
+    justify-content: center;
+    margin-top: 250px; /* Adjust as needed */
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  
+  img {
+    width: 100%; /* Ensure the image covers the container */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the image absolutely within the container */
+    left: 0; /* Align the image to the left */
+    top: 0; /* Align the image to the top */
+    z-index: 0; /* Ensure the image is behind the form */
+  }
+
+.google-map {
+    padding-bottom: 50%;
+    position: relative;
+}
+
+.google-map iframe {
+    right: 20px;
+    bottom: 40px;
+    position: absolute;
+}
+
+footer p{
+    position: absolute;
+    left: 45%;
+}
+
+  @media only screen and (max-width: 500px) {
+    img {
+        width: 390px;
+        height: 850px;
+        object-fit: cover;
+    }
+    form {
+        width: 300px;
+    }
+    .header h2 {
+        left: 50%;
+        bottom: 570px;
+        width: 100%;
+    }
+    .google-map iframe {
+        display: none;
+    }
+    footer p{
+        position: absolute;
+        left: 20%;
+        bottom: 0;
+    }
+  }

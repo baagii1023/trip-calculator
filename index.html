@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Cost Calculator</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section class="header">
+        <div class="title">
+            <h2>Fuel Cost Calculator</h2>
+        </div>
+    </section>
+  <form id="tripForm">
+    <input type="text" id="distance" placeholder="Distance (in kilometers)">
+    <input type="text" id="fuelEfficiency" placeholder="Car Fuel Efficiency (liters per 100 kilometers)">
+    <input type="text" id="fuelPrice" placeholder="Fuel Price (per liter)">
+    <input type="submit" value="Calculate">
+    <div id="result"></div>
+  </form>
+  <img src="pics.jpeg" alt="fuel price picture">
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20828.916699776542!2d-123.1411462959717!3d49.26475062310704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673c0b8748b43%3A0xd98e978ef37556d!2s1305%20W%2012th%20Ave%2C%20Vancouver%2C%20BC%20V6H%201M2!5e0!3m2!1sen!2sca!4v1712337981495!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
+    </div>
+  <script src="script.js"></script>
+</body>
+<footer>
+    <p className="copyright">© Created by <a href="https://baagiiavirmd.com/" target="_blank" rel="noopener noreferrer">Byambabayar Avirmed</a>.</p>
+</footer>
+</html>
